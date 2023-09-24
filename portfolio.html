@@ -1,222 +1,631 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Videograph Template">
-    <meta name="keywords" content="Videograph, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Videograph Template" />
+    <meta name="keywords" content="Videograph, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Videograph | Template</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <script>
-        $('#videoModal').on('hidden.bs.modal', function () {
-            var iframe = $(this).find('iframe')[0];
-            var videoSrc = iframe.src;
-            iframe.src = videoSrc;
-        });
+      $("#videoModal").on("hidden.bs.modal", function () {
+        var iframe = $(this).find("iframe")[0];
+        var videoSrc = iframe.src;
+        iframe.src = videoSrc;
+      });
     </script>
     <!-- Page Preloder -->
     <div id="preloder">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
 
     <!-- Header Section Begin -->
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li class="active"><a href="./portfolio.html">Portfolio</a></li>
-                                <li><a href="./services.html">Services</a></li>
-                                
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="./index.html"><img src="img/logo.png" alt="" /></a>
             </div>
-            <div id="mobile-menu-wrap"></div>
+          </div>
+          <div class="col-lg-10">
+            <div class="header__nav__option">
+              <nav class="header__nav__menu mobile-menu">
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li class="active">
+                    <a href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li><a href="./services.html">Services</a></li>
+
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="header__nav__social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
+        <div id="mobile-menu-wrap"></div>
+      </div>
     </header>
     <!-- Header End -->
 
     <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="breadcrumb__text">
-                        <h2>Portfolio</h2>
-                        <div class="breadcrumb__links">
-                            <a href="#">Home</a>
-                            <span>Portfolio</span>
-                        </div>
-                    </div>
-                </div>
+    <div
+      class="breadcrumb-option spad set-bg"
+      data-setbg="img/breadcrumb-bg.jpg"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="breadcrumb__text">
+              <h2>Portfolio</h2>
+              <div class="breadcrumb__links">
+                <a href="#">Home</a>
+                <span>Portfolio</span>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Breadcrumb End -->
 
     <!-- Portfolio Section Begin -->
     <section class="portfolio spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="portfolio__filter">
-                        <li class="active" data-filter="*">All</li>
-                        <li data-filter=".reels">Reels</li>
-                        <li data-filter=".podcast">Podcast</li>
-                        <li data-filter=".promo">Promo & Intro</li>
-                        <li data-filter=".adds">Adds</li>
-                        <li data-filter=".youtube">YouTube Videos</li>
-                        <li data-filter=".wedding">Wedding Videos</li>
-                        <!-- <li data-filter=".real-estate">Real Estate</li>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="portfolio__filter">
+              <li class="active" data-filter="*">All</li>
+              <li data-filter=".reels">Reels</li>
+              <li data-filter=".podcast">Podcast</li>
+              <li data-filter=".promo">Promo & Intro</li>
+              <li data-filter=".adds">Adds</li>
+              <li data-filter=".youtube">YouTube Videos</li>
+              <li data-filter=".wedding">Wedding Videos</li>
+              <!-- <li data-filter=".real-estate">Real Estate</li>
                         <li data-filter=".montages">Montages</li> -->
-
-
-                    </ul>
+            </ul>
+          </div>
+        </div>
+        <div class="row portfolio__gallery">
+          <div class="col-lg-4 col-md-6 col-sm-6 mix reels">
+            <div class="portfolio__item">
+              <div class="portfolio__item__video">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/YIoWyuupS4A?si=3DT5YFl77CmfcS6U"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </div>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Reels</h4>
+                <ul>
+                  <li>eCommerce</li>
+                  <li>Magento</li>
+                </ul>
+              </div>
             </div>
-            <div class="row portfolio__gallery">
-                <div class="col-lg-4 col-md-6 col-sm-6 mix reels">
-                    <div class="portfolio__item">
-                        <div class="portfolio__item__video ">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YIoWyuupS4A?si=3DT5YFl77CmfcS6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                </div>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>Reels</h4>
-                            <ul>
-                                <li>eCommerce</li>
-                                <li>Magento</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix reels">
+            <div class="portfolio__item">
+              <div class="portfolio__item__video">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/YIoWyuupS4A?si=3DT5YFl77CmfcS6U"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mix reels">
-                    <div class="portfolio__item">
-                        <div class="portfolio__item__video ">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YIoWyuupS4A?si=3DT5YFl77CmfcS6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                </div>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>Reels</h4>
-                            <ul>
-                                <li>eCommerce</li>
-                                <li>Magento</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mix podcast">
-                    <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-2.jpg">
-                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                                    class="fa fa-play"></i></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>VIP Auto Tires & Service</h4>
-                            <span>Photography</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mix adds">
-                    <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-4.jpg">
-                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                                    class="fa fa-play"></i></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>VIP Auto Tires & Service</h4>
-                            <ul>
-                                <li>eCommerce</li>
-                                <li>Magento</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mix youtube">
-                    <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-5.jpg">
-                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                                    class="fa fa-play"></i></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>VIP Auto Tires & Service</h4>
-                            <span>Photography</span>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="col-lg-4 col-md-6 col-sm-6 mix promo">
-                    <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-7.jpg">
-                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                                    class="fa fa-play"></i></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>VIP Auto Tires & Service</h4>
-                            <ul>
-                                <li>eCommerce</li>
-                                <li>Magento</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mix wedding">
-                    <div class="portfolio__item">
-                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-9.jpg">
-                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
-                                    class="fa fa-play"></i></a>
-                        </div>
-                        <div class="portfolio__item__text">
-                            <h4>VIP Auto Tires & Service</h4>
-                            <ul>
-                                <li>eCommerce</li>
-                                <li>Magento</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-4 col-md-6 col-sm-6 mix real-estate">
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Reels</h4>
+                <ul>
+                  <li>eCommerce</li>
+                  <li>Magento</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- // Podcast -->
+
+          <!-- 1 -->
+          <div class="col-lg-4 col-md-6 col-sm-6 mix podcast">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-2.jpg"
+              >
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/5CT6Zr0tsfY?si=LAEOVflA0DcxeMv8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Podcast</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2-->
+          <div class="col-lg-4 col-md-6 col-sm-6 mix podcast">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-2.jpg"
+              >
+              <iframe  width="100%"
+              height="100%" src="https://www.youtube.com/embed/MKdnlo6SQfk?si=t-8eXY_w93ZSu7us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Podcast</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-6 mix podcast">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-2.jpg"
+              >
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/7EI3nEWeQgY?si=FBY80XIqoNx0PdlV"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Podcast</h4>
+              </div>
+            </div>
+          </div>
+          <!-- 4-->
+          <div class="col-lg-4 col-md-6 col-sm-6 mix podcast">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-2.jpg"
+              >
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/qnI3YHiV05I?si=FbJpMvYA67UBi8DI"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Podcast</h4>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="col-lg-4 col-md-6 col-sm-6 mix podcast">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-2.jpg"
+              >
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/f3SlcAV8hqc?si=BgNYGlu7YnhLfQ9h"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Podcast</h4>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="col-lg-4 col-md-6 col-sm-6 mix podcast">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-2.jpg"
+              >
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/gyeFEqlFMCo?si=NDmzxnsPnvZN8tMJ"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Podcast</h4>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mix podcast">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-2.jpg"
+              >
+              <iframe width="100%"
+              height="100%" src="https://www.youtube.com/embed/B7s7bfMgwJ8?si=KFMxQKSNee7Fc5aS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Podcast</h4>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+
+          <div class="col-lg-4 col-md-6 col-sm-6 mix podcast">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-2.jpg"
+              >
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/E7mHRxT85Ic?si=-qhAVfXyo9pClCfk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Podcast</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="col-lg-4 col-md-6 col-sm-6 mix podcast">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-2.jpg"
+              >
+              <iframe width="100%"
+              height="100%" src="https://www.youtube.com/embed/YIoWyuupS4A?si=QjQZGSeC9S4ZIivl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>Podcast</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- // Adds -->
+          <div class="col-lg-4 col-md-6 col-sm-6 mix adds">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-4.jpg"
+              >
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/4qVJ1YRVwFs?si=ROS_r_UvIV-f55K0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                <!-- <h4>VIP Auto Tires & Service</h4> -->
+                <ul>
+                  <li>Adds</li>
+                  <!-- <li>Magento</li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 mix youtube">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-5.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>VIP Auto Tires & Service</h4>
+                <span>Photography</span>
+              </div>
+            </div>
+          </div>
+          <!-- ///Promo and intro -->
+           <!-- 1 -->
+           <div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-7.jpg"
+              >
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/JhtR6Dz8vo8?si=fiRNXZxAqma6r2gP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                  <li>Intro</li>
+              </div>
+            </div>
+          </div>
+           <!-- 2 -->
+           <div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-7.jpg"
+              >
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/9Nf1Y54w4s4?si=BiWNCvD8RySI7Bc5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                  <li>Intro</li>
+              </div>
+            </div>
+          </div> 
+          <!-- 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-7.jpg"
+              >            
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/n7A6-VhzGSA?si=WP6QHNpete93GO49" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                  <li>Intro</li>
+              </div>
+            </div>
+          </div>
+           <!-- 4 -->
+           <div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-7.jpg"
+              >            
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZOp2eAWjR8?si=lv2D5zacE9ovAYWS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="portfolio__item__text">
+                  <li>Intro</li>
+              </div>
+            </div>
+          </div>
+
+<!-- 5 -->
+<div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+    <div class="portfolio__item">
+      <div
+        class="portfolio__item__video set-bg"
+        data-setbg="img/portfolio/portfolio-7.jpg"
+      >            
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZOp2eAWjR8?si=lv2D5zacE9ovAYWS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="portfolio__item__text">
+          <li>Intro</li>
+      </div>
+    </div>
+  </div>
+  <!-- 6 -->
+<div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+    <div class="portfolio__item">
+      <div
+        class="portfolio__item__video set-bg"
+        data-setbg="img/portfolio/portfolio-7.jpg"
+      >            
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0RcMuYgR9-k?si=B0urNV9PjXEXLPP1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+    </div>
+      <div class="portfolio__item__text">
+          <li>Intro</li>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7 -->
+<div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+    <div class="portfolio__item">
+      <div
+        class="portfolio__item__video set-bg"
+        data-setbg="img/portfolio/portfolio-7.jpg"
+      >            
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SVPpjrm2l48?si=LuIzahIzxVXPGyCh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+      <div class="portfolio__item__text">
+          <li>Intro</li>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8 -->
+<div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+    <div class="portfolio__item">
+      <div
+        class="portfolio__item__video set-bg"
+        data-setbg="img/portfolio/portfolio-7.jpg"
+      >            
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xmLyt5dIjmM?si=x_HYf3X-KUIDQ9E0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+    </div>
+      <div class="portfolio__item__text">
+          <li>Intro</li>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- 9 -->
+<div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+    <div class="portfolio__item">
+      <div
+        class="portfolio__item__video set-bg"
+        data-setbg="img/portfolio/portfolio-7.jpg"
+      >            
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/eIehWZ7y2_I?si=cGefuR09e_HUsnDm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+      <div class="portfolio__item__text">
+          <li>Intro</li>
+      </div>
+    </div>
+  </div>
+
+ <!-- 10 -->
+ <div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+    <div class="portfolio__item">
+      <div
+        class="portfolio__item__video set-bg"
+        data-setbg="img/portfolio/portfolio-7.jpg"
+      >            
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/76ZdmI_bJHg?si=1LzWk6VH1oHLXb8v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </div>
+      <div class="portfolio__item__text">
+          <li>Intro</li>
+      </div>
+    </div>
+  </div> <!-- 11 -->
+  <div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+      <div class="portfolio__item">
+        <div
+          class="portfolio__item__video set-bg"
+          data-setbg="img/portfolio/portfolio-7.jpg"
+        >            
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ss_OaAsoMi8?si=DRxXiro7X_cqkdBN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+    </div>
+        <div class="portfolio__item__text">
+            <li>Intro</li>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12 -->
+  <div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+    <div class="portfolio__item">
+      <div
+        class="portfolio__item__video set-bg"
+        data-setbg="img/portfolio/portfolio-7.jpg"
+      >            
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nEhAuX8UHx4?si=P1vcA_zGmOmpbo33" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+      <div class="portfolio__item__text">
+          <li>Intro</li>
+      </div>
+    </div>
+  </div>
+  <!-- 13 -->
+  <div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+    <div class="portfolio__item">
+      <div
+        class="portfolio__item__video set-bg"
+        data-setbg="img/portfolio/portfolio-7.jpg"
+      >            
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7DmUNs8wqkQ?si=qT01rUzXWN0JUshQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+      <div class="portfolio__item__text">
+          <li>Intro</li>
+      </div>
+    </div>
+  </div>
+  <!-- 13 -->
+  <div class="col-lg-4 col-md-6 col-sm-6 mix promo">
+    <div class="portfolio__item">
+      <div
+        class="portfolio__item__video set-bg"
+        data-setbg="img/portfolio/portfolio-7.jpg"
+      >            
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YEJTxsULtFA?si=bZa-r4YYhKbG2CAD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    </div>
+      <div class="portfolio__item__text">
+          <li>Intro</li>
+      </div>
+    </div>
+  </div>
+          <!-- // wedding -->
+          <div class="col-lg-4 col-md-6 col-sm-6 mix wedding">
+            <div class="portfolio__item">
+              <div
+                class="portfolio__item__video set-bg"
+                data-setbg="img/portfolio/portfolio-9.jpg"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                  class="play-btn video-popup"
+                  ><i class="fa fa-play"></i
+                ></a>
+              </div>
+              <div class="portfolio__item__text">
+                <h4>VIP Auto Tires & Service</h4>
+                <ul>
+                  <li>eCommerce</li>
+                  <li>Magento</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6 col-sm-6 mix real-estate">
                     <div class="portfolio__item">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-7.jpg">
                             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
@@ -246,18 +655,22 @@
                         </div>
                     </div>
                 </div> -->
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="pagination__option">
-                        <a href="#" class="arrow__pagination left__arrow"><span class="arrow_left"></span> Prev</a>
-                        <a href="#" class="number__pagination">1</a>
-                        <a href="#" class="number__pagination">2</a>
-                        <a href="#" class="arrow__pagination right__arrow">Next <span class="arrow_right"></span></a>
-                    </div>
-                </div>
-            </div>
         </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="pagination__option">
+              <a href="#" class="arrow__pagination left__arrow"
+                ><span class="arrow_left"></span> Prev</a
+              >
+              <a href="#" class="number__pagination">1</a>
+              <a href="#" class="number__pagination">2</a>
+              <a href="#" class="arrow__pagination right__arrow"
+                >Next <span class="arrow_right"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Portfolio Section End -->
 
@@ -330,19 +743,19 @@
                  <div class="row">
                     <div class="col-lg-12 text-center">
                      Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <!-- <p class="footer__copyright__text">Copyright &copy;
+    <!-- <p class="footer__copyright__text">Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
                             All rights reserved | This template is made with <i class="fa fa-heart-o"
                                 aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                         </p> -->
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    <!-- </div>
-                </div> --> 
-            <!-- </div>
+    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    <!-- </div>
+                </div> -->
+    <!-- </div>
         </div>
-    </footer> --> 
+    </footer> -->
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
@@ -354,6 +767,5 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
